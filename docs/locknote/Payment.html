@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Instructions / 支付说明</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; line-height: 1.6; }
+    h2 { color: #333; }
+    code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+    .lang { display: none; }
+    .active { display: block; }
+    .note { color: #555; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+
+<!-- 中文内容 -->
+<div id="zh" class="lang">
+  <h2>支付说明</h2>
+  <p>感谢您支持本应用！本应用为一次性买断制，购买后您将获得永久授权码，解锁全部高级功能。</p>
+
+  <h3>支付方式：</h3>
+  <ol>
+    <li>
+      <strong>数字货币支付（USDT）</strong><br>
+      金额：<code>2 USDT</code>（稳定币）<br>
+      网络：TRC20 或 ERC20（建议使用 TRC20 节省手续费）<br>
+      收款地址（OKX 钱包）：<br>
+      <code>ERC20地址：0xe9296fd7254f8468ac82868c98bfe4a2e51dbd42</code><br>
+      <code>TRC20地址：TUPi8hNWSrqo4DEiyfjhpDtxyVbc8kuFEA</code><br>
+      支付后请将交易哈希（TxID）与您的邮箱一起发送至：<br>
+      <code>beezcode@163.com</code><br>
+      我们将在 24 小时内通过邮箱发送授权码。
+    </li>
+  </ol>
+
+  <p class="note">
+    本应用不会收集您的支付信息。<br>
+    支付由第三方平台（OKX）完成。<br>
+    授权码一经发出，不支持退款，请确认购买需求。
+  </p>
+</div>
+
+<!-- English Content -->
+<div id="en" class="lang">
+  <h2>Payment Instructions</h2>
+  <p>Thank you for supporting this app! This is a one-time purchase. After payment, you will receive a permanent license key to unlock all premium features.</p>
+
+  <h3>Payment Methods:</h3>
+  <ol>
+    <li>
+      <strong>Cryptocurrency Payment (USDT)</strong><br>
+      Amount: <code>2 USDT</code> (stablecoin)<br>
+      Network: TRC20 or ERC20 (TRC20 is recommended for lower fees)<br>
+      Recipient Address (OKX Wallet):<br>
+      <code>ERC20 Address：0xe9296fd7254f8468ac82868c98bfe4a2e51dbd42</code><br>
+      <code>TRC20 Address：TUPi8hNWSrqo4DEiyfjhpDtxyVbc8kuFEA</code><br>
+      After payment, please send the transaction hash (TxID) and your email address to:<br>
+      <code>beezcode@163.com</code><br>
+      We will send the license key to your email within 24 hours.
+    </li>
+  </ol>
+
+  <p class="note">
+    This app does not collect any payment information.<br>
+    All payments are processed by third-party platforms (OKX).<br>
+    No refunds will be provided after the license key is issued. Please confirm your purchase before payment.
+  </p>
+</div>
+
+<script>
+  const userLang = navigator.language || navigator.userLanguage;
+  if (userLang.startsWith('zh')) {
+    document.getElementById('zh').classList.add('active');
+  } else {
+    document.getElementById('en').classList.add('active');
+  }
+</script>
+
+</body>
+</html>
